@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Review Notebook Lenovo Ideapad 1i</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>JMaiaP Tech</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="tutoriais.html">Tutoriais</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="review">
+      <h2>Review: Notebook Lenovo Ideapad 1i</h2>
+      <p>
+        O Lenovo Ideapad 1i é uma opção de entrada voltada para estudantes,
+        profissionais que precisam de mobilidade e usuários que realizam tarefas
+        básicas como navegação na internet, pacotes de escritório e videochamadas.
+      </p>
+
+      <p>
+        Seu design é compacto e leve, tornando-o prático para transporte diário.
+        Embora conte com um processador mais simples (Celeron ou similar),
+        ele cumpre bem o papel de notebook para estudo e produtividade leve.
+      </p>
+
+      <p>
+        O ponto positivo é o custo-benefício: você leva um equipamento novo,
+        com garantia, e pronto para uso em atividades do dia a dia. O ponto
+        negativo é a limitação para jogos e softwares pesados, não sendo ideal
+        para quem busca desempenho avançado.
+      </p>
+
+      <h3>Ficha Técnica</h3>
+      <ul>
+        <li>Processador: Intel Celeron</li>
+        <li>Memória RAM: 4GB</li>
+        <li>Armazenamento: 128GB SSD</li>
+        <li>Tela: 15,6” HD</li>
+        <li>Sistema: Windows 11</li>
+      </ul>
+
+      <h3>Onde Comprar</h3>
+      <!-- Aqui o card automático via API -->
+      <div id="produto-review"></div>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2025 JMaiaP Tech - Criado por Joel Maia</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    carregarProduto("MLB5203109346", "https://mercadolivre.com/sec/2Y1byiA")
+      .then(html => document.getElementById("produto-review").innerHTML = html);
+  </script>
+</body>
+</html>
